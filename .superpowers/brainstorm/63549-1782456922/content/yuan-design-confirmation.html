@@ -1,0 +1,92 @@
+<h2>“今日也先接住下一步” 页面方案确认</h2>
+<p class="subtitle">基于你给的四张参考图，先做一个 React Native 可交互原型。</p>
+
+<div class="cards">
+  <div class="card" data-choice="recommended" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;padding:16px;background:#fff8f2;border-radius:18px">
+        <div style="height:220px;border:1px solid #ead6bd;border-radius:18px;background:linear-gradient(#fffaf5,#fff4ea);padding:12px">
+          <strong style="color:#7b4326">今日主页</strong>
+          <div style="margin-top:16px;height:44px;border-radius:12px;background:#d93025"></div>
+          <div style="margin-top:14px;height:54px;border-radius:12px;border:1px solid #edd7bf"></div>
+          <div style="margin-top:14px;height:70px;border-radius:12px;border:1px solid #edd7bf"></div>
+        </div>
+        <div style="height:220px;border:1px solid #ead6bd;border-radius:18px;background:#fffaf5;padding:12px">
+          <strong style="color:#7b4326">行动拆解</strong>
+          <div style="margin-top:16px;height:42px;border-radius:12px;background:#fff1eb"></div>
+          <div style="margin-top:10px;height:96px;border-radius:12px;border:1px solid #edd7bf"></div>
+          <div style="margin-top:12px;height:34px;border-radius:999px;background:#d93025"></div>
+        </div>
+        <div style="height:220px;border:1px solid #2d211b;border-radius:18px;background:#1d1714;padding:12px">
+          <strong style="color:#fff0df">专注计时</strong>
+          <div style="margin:18px auto 0;width:110px;height:110px;border:8px solid #d93025;border-radius:999px;color:#fff;display:flex;align-items:center;justify-content:center;font-size:24px">10:00</div>
+          <div style="margin-top:16px;height:34px;border-radius:999px;background:#d93025"></div>
+        </div>
+        <div style="height:220px;border:1px solid #ead6bd;border-radius:18px;background:#fffaf5;padding:12px">
+          <strong style="color:#7b4326">晚间复盘</strong>
+          <div style="margin-top:16px;height:44px;border-radius:12px;border:1px solid #edd7bf"></div>
+          <div style="margin-top:12px;height:36px;border-radius:12px;background:#fff1eb"></div>
+          <div style="margin-top:12px;height:58px;border-radius:12px;border:1px solid #edd7bf"></div>
+          <div style="margin-top:12px;height:34px;border-radius:999px;background:#d93025"></div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>推荐：四屏原型，一次做全主体验</h3>
+      <p>用底部导航/页面按钮切换：今日托底、行动拆解、专注计时、晚间复盘。角色图先用纯样式“纸娃娃/挂饰/黑猫”等插画感元素替代，不依赖外部图片。</p>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>实现范围</h3>
+  <div class="options" data-multiselect>
+    <div class="option" data-choice="home" onclick="toggleSelect(this)">
+      <div class="letter">1</div>
+      <div class="content">
+        <h3>今日主页</h3>
+        <p>状态选择、当前最小行动、今日三件事、习惯打卡、底部导航。</p>
+      </div>
+    </div>
+    <div class="option" data-choice="action" onclick="toggleSelect(this)">
+      <div class="letter">2</div>
+      <div class="content">
+        <h3>行动拆解</h3>
+        <p>“只做 10 分钟”的步骤列表、守护的话、开始按钮。</p>
+      </div>
+    </div>
+    <div class="option" data-choice="focus" onclick="toggleSelect(this)">
+      <div class="letter">3</div>
+      <div class="content">
+        <h3>专注计时</h3>
+        <p>深色神社氛围、10:00 圆形计时盘、开始/放弃/番茄钟/自定义按钮。</p>
+      </div>
+    </div>
+    <div class="option" data-choice="review" onclick="toggleSelect(this)">
+      <div class="letter">4</div>
+      <div class="content">
+        <h3>晚间复盘</h3>
+        <p>今日回顾、感受选择、总结输入区、明日期待、完成按钮。</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="pros-cons">
+  <div class="pros">
+    <h4>会尽量贴近截图</h4>
+    <ul>
+      <li>米白纸感背景、朱红主按钮、浅金描边</li>
+      <li>圆角卡片、中文标题、温柔陪伴文案</li>
+      <li>深色专注页和亮色日常页形成对比</li>
+    </ul>
+  </div>
+  <div class="cons">
+    <h4>先不做</h4>
+    <ul>
+      <li>不接入真实计时后台/通知</li>
+      <li>不使用外部 AI 角色图片</li>
+      <li>不加复杂路由库，先用本地状态切换</li>
+    </ul>
+  </div>
+</div>

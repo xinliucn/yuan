@@ -10,10 +10,13 @@
     "test": "jest"
   },
   "dependencies": {
+    "@react-native/new-app-screen": "0.86.0",
+    "@react-navigation/bottom-tabs": "^7.18.3",
+    "@react-navigation/native": "^7.3.4",
     "react": "19.2.3",
     "react-native": "0.86.0",
-    "@react-native/new-app-screen": "0.86.0",
-    "react-native-safe-area-context": "^5.5.2"
+    "react-native-safe-area-context": "^5.5.2",
+    "react-native-screens": "^4.25.2"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
@@ -37,5 +40,6 @@
   },
   "engines": {
     "node": ">= 22.11.0"
-  }
+  },
+  "packageManager": "yarn@4.14.0+sha512.31053dd4c730c75e8665ad00bbfe07a7bed08aef54c5edfd8d484463680180b1c87035a61b9e15ff2cad310a329176cac433009e2d402ac69d1386f9445d7ccb"
 }
